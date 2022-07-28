@@ -22,6 +22,16 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
+@import "../node_modules/bootstrap/scss/bootstrap";
+.navbar-nav {
+	li {
+		@extend .nav-item;
+		a {
+			@extend .nav-link;
+		}
+	}
+}
+
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -68,7 +78,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
-@import "base/base";
+//@import "base/base";
 
 /*--------------------------------------------------------------
 # Layouts
